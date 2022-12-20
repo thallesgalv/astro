@@ -1,0 +1,17 @@
+---
+import Layout from "@layouts/Layout.astro";
+import HeaderComponent from "@components/HeaderComponent.astro";
+import { changeLanguage } from "i18next";
+import HeroView from "@views/HeroView.astro";
+
+changeLanguage("en");
+---
+
+<Layout title="Hello Word">
+	<HeaderComponent />
+	<main>
+		<HeroView />
+	</main>
+</Layout>
+
+<!-- class="px-4 md:px-28" -->

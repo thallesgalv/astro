@@ -1,0 +1,25 @@
+---
+import LogoComponent from '@components/LogoComponent.astro'
+import SelectLocaleComponent from '@components/SelectLocaleComponent.astro'
+import BaseIcon from '@base/BaseIcon.astro'
+import NavigationMenuComponent from '@components/NavigationMenuComponent.astro';
+
+let isMobileMenuOpen = true
+
+export const handleMenu = () => {
+  alert('work')
+    isMobileMenuOpen = !isMobileMenuOpen
+}
+---
+
+<header class='py-2 md:pt-16 flex md:justify-end items-center'>
+  <div class='h-14 w-full flex justify-between items-center cursor-pointer md:hidden'>
+    <LogoComponent />
+    <button onclick="handleMenu">
+      <BaseIcon icon='ph:list-thin'/>
+    </button>
+  </div>
+  <NavigationMenuComponent isMobileMenuOpen={isMobileMenuOpen}/>
+  <SelectLocaleComponent extraClass="only-desktop"/>
+</header>
+

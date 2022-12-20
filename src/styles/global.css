@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: "Gilroy-ExtraBold";
+  src: url("/fonts/Gilroy-ExtraBold.otf");
+}
+
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url("/fonts/Gilroy-Light.otf");
+}
+
+
+.only-desktop {
+ @apply hidden md:block;
+}
+
+.brutalism {
+  @apply border-2 border-dark shadow-brutalism rounded;
+}
+
+.button-effect {
+  @apply active:shadow-none active:translate-x-1 active:translate-y-1
+}
+

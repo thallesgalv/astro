@@ -1,0 +1,8 @@
+{
+  "routes": {
+    "portifolio": "Portifólio",
+    "skills": "Competências",
+    "experience": "Experiência",
+    "contact": "Contato"
+  }
+}

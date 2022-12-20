@@ -1,0 +1,15 @@
+---
+import BaseIcon from './base/BaseIcon.astro'
+import { LanguageSelector } from 'astro-i18next/components'
+
+export interface Props {
+  extraClass?: string
+}
+
+const { extraClass } = Astro.props
+---
+
+<LanguageSelector
+  showFlag={true}
+  class:list={['bg-white outline-none border brutalism rounded p-1 cursor-pointer', extraClass]}
+/>
